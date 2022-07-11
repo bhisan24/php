@@ -16,20 +16,32 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="main.css" />
 
-    <title>Welcome - <?php $_SESSION['username']?></title>
+    <title>Welcome</title>
   </head>
   <body>
     <?php require 'partials/_nav.php' ?>
-    
-    <div class="container my-3">
+    <div class="bgimg">
+   
+  
+  <div class="topleft">
     <div class="alert alert-success" role="alert">
-      <h4 class="alert-heading">Welcome - <?php echo $_SESSION['username']?></h4>
-      <p>Hey how are you doing? Welcome to iSecure. You are logged in as <?php echo $_SESSION['username']?>. Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+      <h5 class="alert-heading">Welcome - <?php echo $_SESSION['username']?></h5>
+      <h5>Welcome to IET_technology. You are logged in as <?php echo $_SESSION['username']?>. I hope you love this page.</h5>
       <hr>
-      <p class="mb-0">Whenever you need to, be sure to logout <a href="/loginsystem/logout.php"> using this link.</a></p>
+      <h5 class="mb-0">Whenever you need to logout, use this link - <a href="/loginsystem/logout.php"> LOG OUT.</a></h5>
     </div>
   </div>
+  </div>
+  <div class="middle">
+    <h1>COMING SOON</h1>
+  </div>
+  <div class="bottomleft">
+    <p>IET_technology</p>
+  </div>
+</div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

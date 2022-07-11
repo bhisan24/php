@@ -46,7 +46,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>Login</title>
   </head>
   <body>
+ 
     <?php require 'partials/_nav.php' ?>
+
+
+
+    <div class="container">
     <?php
     if($login){
     echo ' <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -69,12 +74,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <div class="container my-4">
      <h1 class="text-center">Login to our website</h1>
      <form action="/loginsystem/login.php" method="post">
-        <div class="form-group">
+        <div class="form-group col-md-6">
             <label for="username">Username</label>
             <input type="text" class="form-control" id="username" name="username" aria-describedby="emailHelp">
             
         </div>
-        <div class="form-group">
+        <div class="form-group col-md-6">
             <label for="password">Password</label>
             <input type="password" class="form-control" id="password" name="password">
         </div>
@@ -83,7 +88,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <button type="submit" class="btn btn-primary">Login</button>
      </form>
     </div>
+    </div>
 
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
